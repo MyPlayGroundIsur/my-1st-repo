@@ -1,0 +1,7 @@
+Line A
+
+<<<<<<< HEAD
+Line B
+=======
+Line C
+>>>>>>> feat/2
