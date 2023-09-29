@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="root" prefHeight="217.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainFormController">
+   <children>
+      <Label layoutX="247.0" layoutY="14.0" text="OOP in Action: Demo 10" />
+      <VBox layoutX="97.0" layoutY="52.0" prefHeight="200.0" prefWidth="414.0">
+         <children>
+            <HBox prefHeight="36.0" prefWidth="414.0">
+               <children>
+                  <Label prefHeight="16.0" prefWidth="95.0" text="Ener Amount:" />
+                  <Spinner fx:id="txtAmount" />
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="414.0">
+               <children>
+                  <Button fx:id="btnDeposit" mnemonicParsing="false" onAction="#btnDepositOnAction" text="Deposit" />
+                  <Button fx:id="btnWithdraw" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnWithdrawOnAction" text="Withdraw" />
+               </children>
+            </HBox>
+            <Label fx:id="lblBalance" text="Balance: Rs.0.00" />
+            <Button fx:id="btnPrintPassbook" mnemonicParsing="false" onAction="#btnPrintPassbookOnAction" text="Print Passbook" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
